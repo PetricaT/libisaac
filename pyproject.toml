@@ -1,0 +1,25 @@
+[build-system]
+requires = ["pytest>=8.4.1", "userpaths>=0.1.3"]
+# build-backend = "setuptools.build_meta"
+
+[project]
+name = "libisaac"
+version = "0.1.0"
+description = "A Python library for interacting with The Binding of Isaac: Rebirth mods"
+readme = "README.md"
+authors = [{ name = "PetricaT", email = "24418935+PetricaT@users.noreply.github.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["videogame", "mods", "manager"]
+
+[project.urls]
+Homepage = "https://github.com/PetricaT/libisaac"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["libisaac*"]
+# exclude = ["tests*"]
